@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import '../../component/main_header.dart';
 import '../../controller/controllers.dart';
 import 'components/carousel_slider/carousel_loading.dart';
+import 'components/carousel_slider/carousel_slider_view.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,8 +17,8 @@ class HomeScreen extends StatelessWidget {
         children: [
           const MainHeader(),
           Obx(() {
-            if (homeController.isBannerLoading.value) {
-              return CarouselLoading();
+            if (homeController.bannerList.isNotEmpty) {
+              return CarouselSliderView(bannerList: homeController.bannerList);
             } else {
               return CarouselLoading();
             }
