@@ -80,6 +80,18 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "http",
+      "rootUri": "file:///C:/Users/pvlti/AppData/Local/Pub/Cache/hosted/pub.dev/http-0.13.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///C:/Users/pvlti/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///C:/Users/pvlti/AppData/Local/Pub/Cache/hosted/pub.dev/js-0.6.5",
       "packageUri": "lib/",
@@ -112,6 +124,12 @@
     {
       "name": "path",
       "rootUri": "file:///C:/Users/pvlti/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.8.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "shimmer",
+      "rootUri": "file:///C:/Users/pvlti/AppData/Local/Pub/Cache/hosted/pub.dev/shimmer-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -158,6 +176,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "typed_data",
+      "rootUri": "file:///C:/Users/pvlti/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///C:/Users/pvlti/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
@@ -170,7 +194,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-03-29T16:52:08.344506Z",
+  "generated": "2023-04-03T14:40:25.550617Z",
   "generator": "pub",
   "generatorVersion": "2.19.1"
 }
