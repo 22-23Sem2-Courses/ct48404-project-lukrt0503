@@ -9,6 +9,7 @@ import 'package:my_grocery/view/home/components/section_title.dart';
 import 'components/carousel_slider/carousel_slider_view.dart';
 import 'components/popular_category/popular_category_loading.dart';
 import 'components/carousel_slider/carousel_loading.dart';
+import 'components/popular_product/popular_product.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -41,10 +42,11 @@ class HomeScreen extends StatelessWidget {
                     return const PopularCategoryLoading();
                   }
                 }),
-                const SectionTitle(title: "Sản phẩm phổ biến"),
+                const SectionTitle(title: "Sản phẩm phổ biến "),
                 Obx(() {
                   if (homeController.popularProductList.isNotEmpty) {
-                    return const PopularProductLoading();
+                    return PopularProduct(
+                        popularProducts: homeController.popularProductList);
                   } else {
                     return const PopularProductLoading();
                   }
