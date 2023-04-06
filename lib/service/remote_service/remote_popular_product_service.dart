@@ -1,6 +1,5 @@
 import 'package:http/http.dart' as http;
-
-import '../../const.dart';
+import 'package:my_grocery/const.dart';
 
 class RemotePopularProductService {
   var client = http.Client();

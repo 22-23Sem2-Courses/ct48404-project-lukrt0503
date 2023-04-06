@@ -1,7 +1,8 @@
 import 'dart:convert';
 
 import 'package:hive/hive.dart';
-import 'package:my_grocery/model/tag.dart';
+
+import 'tag.dart';
 
 part 'product.g.dart';
 
