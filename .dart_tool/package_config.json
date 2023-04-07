@@ -284,6 +284,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///C:/Users/pvlti/AppData/Local/Pub/Cache/hosted/pub.dev/intl-0.18.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "io",
       "rootUri": "file:///C:/Users/pvlti/AppData/Local/Pub/Cache/hosted/pub.dev/io-1.0.4",
       "packageUri": "lib/",
@@ -596,7 +602,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-04-06T05:33:30.424982Z",
+  "generated": "2023-04-07T03:02:03.423552Z",
   "generator": "pub",
   "generatorVersion": "2.19.1"
 }
