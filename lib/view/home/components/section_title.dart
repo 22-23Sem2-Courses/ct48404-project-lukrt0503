@@ -16,7 +16,7 @@ class SectionTitle extends StatelessWidget {
             style: const TextStyle(fontSize: 18, color: Colors.black),
           ),
           const Text(
-            "Xem thêm",
+            "See more",
             style: TextStyle(color: Colors.grey),
           ),
         ],

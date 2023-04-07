@@ -1,13 +1,13 @@
 import 'package:get/get.dart';
+import 'package:my_grocery/model/ad_banner.dart';
+import 'package:my_grocery/model/category.dart';
+import 'package:my_grocery/model/product.dart';
 import 'package:my_grocery/service/local_service/local_ad_banner_service.dart';
-import 'package:my_grocery/service/local_service/local_category_service.dart';
 import 'package:my_grocery/service/local_service/local_product_service.dart';
+import 'package:my_grocery/service/remote_service/remote_banner_service.dart';
 import 'package:my_grocery/service/remote_service/remote_popular_category_service.dart';
 
-import '../model/ad_banner.dart';
-import '../model/category.dart';
-import '../model/product.dart';
-import '../service/remote_service/remote_banner_service.dart';
+import '../service/local_service/local_category_service.dart';
 import '../service/remote_service/remote_popular_product_service.dart';
 
 class HomeController extends GetxController {
@@ -41,7 +41,6 @@ class HomeController extends GetxController {
       if (_localAdBannerService.getAdBanners().isNotEmpty) {
         bannerList.assignAll(_localAdBannerService.getAdBanners());
       }
-
       //call api
       var result = await RemoteBannerService().get();
       if (result != null) {
@@ -70,7 +69,6 @@ class HomeController extends GetxController {
             popularCategories: popularCategoryListFromJson(result.body));
       }
     } finally {
-      print(popularCategoryList.length);
       isPopularCategoryLoading(false);
     }
   }
@@ -88,7 +86,6 @@ class HomeController extends GetxController {
             popularProducts: popularProductListFromJson(result.body));
       }
     } finally {
-      print(popularProductList.length);
       isPopularProductLoading(false);
     }
   }
