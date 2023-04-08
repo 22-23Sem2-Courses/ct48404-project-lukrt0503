@@ -71,7 +71,7 @@ class _ProductCarouselSliderState extends State<ProductCarouselSlider> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: Icon(Icons.arrow_back),
+              icon: const Icon(Icons.arrow_back),
             ))
           ],
         ),
