@@ -28,7 +28,7 @@ class ProductScreen extends StatelessWidget {
                   children: [
                     Image.asset('assets/product_not_found.png'),
                     const SizedBox(height: 10),
-                    const Text('Không tìm thấy sản phảm!')
+                    const Text('Không tìm thấy sản phẩm!')
                   ],
                 );
               }

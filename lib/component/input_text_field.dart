@@ -34,8 +34,7 @@ class InputTextField extends StatefulWidget {
       this.obsecureText = false,
       this.textAlign = TextAlign.left,
       this.onEditComplete,
-      this.textInputAction = TextInputAction.next,
-      required bool onsecureText})
+      this.textInputAction = TextInputAction.next})
       : super(key: key);
 
   @override

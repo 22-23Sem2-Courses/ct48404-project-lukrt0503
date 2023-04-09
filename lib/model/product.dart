@@ -12,6 +12,8 @@ List<Product> popularProductListFromJson(String val) => List<Product>.from(
 List<Product> productListFromJson(String val) => List<Product>.from(
     json.decode(val)['data'].map((val) => Product.productFromJson(val)));
 
+//maybe this model
+//double check with my code
 @HiveType(typeId: 3)
 class Product {
   @HiveField(0)

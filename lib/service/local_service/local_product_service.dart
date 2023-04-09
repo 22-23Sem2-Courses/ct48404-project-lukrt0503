@@ -6,7 +6,8 @@ class LocalProductService {
   late Box<Product> _popularProductBox;
 
   Future<void> init() async {
-    _popularProductBox = await Hive.openBox<Product>('PopularProducts');
+    //issue in here
+    _popularProductBox = await Hive.openBox<Product>('popularProduct');
   }
 
   Future<void> assignAllPopularProducts(

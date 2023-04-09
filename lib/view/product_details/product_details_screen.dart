@@ -145,7 +145,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: Text(
-                'About this product:',
+                'Thông tin sản phẩm:',
                 style: TextStyle(
                     fontSize: 16,
                     color: Theme.of(context).primaryColor,
@@ -174,7 +174,7 @@ class _ProductDetailsScreenState extends State<ProductDetailsScreen> {
           child: const Padding(
             padding: EdgeInsets.all(6.0),
             child: Text(
-              'Add to Card',
+              'Thêm vào giỏ hàng',
               style: TextStyle(fontSize: 16),
             ),
           ),

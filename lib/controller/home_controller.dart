@@ -37,12 +37,14 @@ class HomeController extends GetxController {
   void getAdBanners() async {
     try {
       isBannerLoading(true);
+      print("Start fetching banners");
       //assigning local ad banners before call api
       if (_localAdBannerService.getAdBanners().isNotEmpty) {
         bannerList.assignAll(_localAdBannerService.getAdBanners());
       }
       //call api
       var result = await RemoteBannerService().get();
+      print(result.body);
       if (result != null) {
         //assign api result
         bannerList.assignAll(adBannerListFromJson(result.body));
@@ -58,9 +60,9 @@ class HomeController extends GetxController {
   void getPopularCategories() async {
     try {
       isPopularCategoryLoading(true);
-      if (_localCategoryService.getPopularCategories().isNotEmpty) {
+      if (_localCategoryService.getPopularCategories() != null) {
         popularCategoryList
-            .assignAll(_localCategoryService.getPopularCategories());
+            .assignAll(_localCategoryService.getPopularCategories()!);
       }
       var result = await RemotePopularCategoryService().get();
       if (result != null) {

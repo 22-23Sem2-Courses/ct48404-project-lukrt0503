@@ -22,6 +22,6 @@ class LocalCategoryService {
     await _categoryBox.addAll(categories);
   }
 
-  List<Category> getPopularCategories() => _popularCategoryBox.values.toList();
+  List<Category>? getPopularCategories() => _popularCategoryBox.values.toList();
   List<Category> getCategories() => _categoryBox.values.toList();
 }

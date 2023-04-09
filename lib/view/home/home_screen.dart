@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                     return const CarouselLoading();
                   }
                 }),
-                const SectionTitle(title: "Popular Category"),
+                const SectionTitle(title: "Danh mục phổ biến"),
                 Obx(() {
                   if (homeController.popularCategoryList.isNotEmpty) {
                     return PopularCategory(
@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
                     return const PopularCategoryLoading();
                   }
                 }),
-                const SectionTitle(title: "Popular Product"),
+                const SectionTitle(title: "Sản phẩm phổ biến"),
                 Obx(() {
                   if (homeController.popularProductList.isNotEmpty) {
                     return PopularProduct(

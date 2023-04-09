@@ -58,7 +58,7 @@ class MainHeader extends StatelessWidget {
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(24),
                           borderSide: BorderSide.none),
-                      hintText: "Search...",
+                      hintText: "Tìm kiếm...",
                       prefixIcon: const Icon(Icons.search)),
                 )),
           )),

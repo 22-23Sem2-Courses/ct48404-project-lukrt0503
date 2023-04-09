@@ -167,11 +167,21 @@
 				{
 					"name": "sign_in",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"lukrt05@gmail.com\",\r\n    \"email\": \"lukrt05@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"username\": \"lukrt03@gmail.com\",\r\n    \"email\": \"lukrt03@gmail.com\",\r\n    \"password\": \"kNJNJ@vKMv1\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -202,7 +212,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"identifier\": \"lukrt05@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"identifier\": \"lukrt03@gmail.com\",\r\n    \"password\": \"kNJNJ@vKMv1\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -233,7 +243,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjgwOTIyNDc4LCJleHAiOjE2ODM1MTQ0Nzh9.Vtnnc1QbMrjorQ4iAFVP4OMxJPuyHBJDTqzaSJAB-cU",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjgxMDA5Mzg0LCJleHAiOjE2ODM2MDEzODR9.565qlWpEXLZ3F_yK3VxMnW1PQ4FASLU_ZpkVS7RNbcE",
 									"type": "string"
 								}
 							]
@@ -242,7 +252,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"fullName\": \"Truong Phan\"\r\n}",
+							"raw": "{\r\n    \"fullName\": \"Lukrt\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -268,8 +278,31 @@
 				{
 					"name": "profileGetMe",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjgxMDA5Mzg0LCJleHAiOjE2ODM2MDEzODR9.565qlWpEXLZ3F_yK3VxMnW1PQ4FASLU_ZpkVS7RNbcE",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/profile/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"profile",
+								"me"
+							]
+						}
 					},
 					"response": []
 				}
